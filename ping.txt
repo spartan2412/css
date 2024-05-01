@@ -1,0 +1,8 @@
+ping www.google.com
+ipconfig
+nslookup www.google.com
+netstat
+hostname
+arp /a
+tracert www.google.com
+getmac

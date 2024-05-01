@@ -1,0 +1,5 @@
+nmap -sT <target> //TCP scan
+nmap -sX <target>//Xmas scan
+nmap -O <target> //OS fingerprinting
+nmap -sn <target> //ping scanning
+nmap <target> //port scanning

@@ -1,0 +1,38 @@
+def encrypt_transposition(plain_text):
+    text_length = len(plain_text)
+    num_columns = 3
+    num_rows = -(-text_length // num_columns)
+    transposition_grid = [[' ' for _ in range(num_columns)] for _ in range(num_rows)]
+    index = 0
+    for col in range(num_columns):
+        for row in range(num_rows):
+            if index < text_length:
+                transposition_grid[row][col] = plain_text[index]
+                index += 1
+    encrypted_text = ''.join(''.join(row) for row in transposition_grid)
+    return encrypted_text
+
+def decrypt_transposition(encrypted_text):
+    text_length = len(encrypted_text)
+    num_columns = 3
+    num_rows = -(-text_length // num_columns)
+    transposition_grid = [[' ' for _ in range(num_columns)] for _ in range(num_rows)]
+    index = 0
+    for row in range(num_rows):
+        for col in range(num_columns):
+            if index < text_length:
+                transposition_grid[row][col] = encrypted_text[index]
+                index += 1
+    decrypted_text = ''.join(''.join(row) for row in zip(*transposition_grid))
+    return decrypted_text
+
+plain_text = input("Enter the value: ")
+encrypted_text = encrypt_transposition(plain_text)
+print("Encrypted:", encrypted_text)
+decrypted_text = decrypt_transposition(encrypted_text)
+print("Decrypted:", decrypted_text)
+
+
+
+
+

